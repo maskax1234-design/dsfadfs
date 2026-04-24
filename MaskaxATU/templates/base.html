@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}School Website{% endblock %}</title>
+ 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% load static %}
+</head>
+<body>
+
+<header>
+    <div class="logo">Bright Future School</div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Empowering Students for a Better Future</h1>
+    <p>Quality Education | Discipline | Innovation</p>
+</section>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <p>© 2026 Bright Future School | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
